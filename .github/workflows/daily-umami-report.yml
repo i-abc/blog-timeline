@@ -2,7 +2,7 @@ name: daily-umami-report
 
 on:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '0 * * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -29,7 +29,7 @@ jobs:
           umami-report-content: pageviews|events|urls
           umami-period: 24h
           umami-unit: hour
-          umami-tz: America/Los_Angeles
+          umami-tz: Asia/Shanghai
         env:
           UMAMI_CLIENT_TIMEOUT_MS: 5000
       - name: Deploy to GitHub Pages
