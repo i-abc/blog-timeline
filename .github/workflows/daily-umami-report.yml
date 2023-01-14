@@ -29,15 +29,6 @@ jobs:
         env:
           UMAMI_CLIENT_TIMEOUT_MS: 5000
 
-      - name: Have a look at !secret results from next step using outputs
-        run: |
-          echo "${{ steps.umamiReportStep.outputs.umamiReportFile }}"
-          ls -la "${{ steps.umamiReportStep.outputs.umamiReportFile }}"
-  nextJob:
-    needs: umamiReportJob
-    name: github action next job
-    runs-on: ubuntu-latest
-    steps:
-      - name: print var
-        run: |
-          echo "FROM umamiReport outputs: ${{ needs.umamiReportJob.outputs.umami_report_file }} and ${{ needs.umamiReportJob.outputs.umami_page_views }} pageviews "
+      - name: Output
+        if: github.repository_owner == 'i-abc'
+        run: mv umami/ umami/
