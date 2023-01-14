@@ -29,7 +29,7 @@ jobs:
           umami-report-content: pageviews|events|urls
           umami-period: 24h
           umami-unit: hour
-          umami-tz: Etc/GMT+8
+          umami-tz: Asia/Shanghai
         env:
           UMAMI_CLIENT_TIMEOUT_MS: 5000
       - name: Deploy to GitHub Pages
