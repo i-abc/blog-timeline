@@ -28,7 +28,14 @@ jobs:
           umami-report-file: 'umamiReport.txt'
         env:
           UMAMI_CLIENT_TIMEOUT_MS: 5000
-
-      - name: Output
-        if: github.repository_owner == 'i-abc'
-        run: mv umami/ umami/
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        publish_dir: ./umami
+        external_repository: i-abc/blog-timeline
+        publish_branch: main
+        destination_dir: umami
+        commit_message: ${{ github.event.head_commit.message }}
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
