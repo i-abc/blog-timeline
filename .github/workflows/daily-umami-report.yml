@@ -25,7 +25,11 @@ jobs:
           umami-user: ${{secrets.UMAMI_USERNAME}}
           umami-password: ${{secrets.UMAMI_PASSWORD}}
           umami-site-domain: ${{secrets.UMAMI_SITE_DOMAIN}}
-          umami-report-file: 'umamiReport.txt'
+          umami-report-file: 'umamiReport.md'
+          umami-report-content: pageviews|events|urls
+          umami-period: 24h
+          umami-unit: hour
+          umami-tz: Asia/Shanghai
         env:
           UMAMI_CLIENT_TIMEOUT_MS: 5000
       - name: Deploy to GitHub Pages
