@@ -2,7 +2,7 @@ name: daily-umami-report
 
 on:
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '30 * * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -14,8 +14,8 @@ jobs:
     outputs:
       umami_page_views: ${{ steps.umamiReportStep.outputs.pageViews }}
       umami_report_file: ${{ steps.umamiReportStep.outputs.umamiReportFile }}
-#      umami_report: ${{ steps.umamiReport.outputs.umamiReport }}
-#      umami_one_line_report: ${{ steps.umamiReport.outputs.umamiOneLineReport }}
+      umami_report: ${{ steps.umamiReport.outputs.umamiReport }}
+      umami_one_line_report: ${{ steps.umamiReport.outputs.umamiOneLineReport }}
     steps:
       - name: Create Daily Umami report
         id: umamiReportStep
