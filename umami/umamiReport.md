@@ -1,22 +1,22 @@
-# 03/04/2023 14:14 - Umami report
+# 03/04/2023 15:16 - Umami report
 for www.shifeiti.com [24h] :
 
- - 374 (-184) page views
- - 139 (-40) uniques
- - 106 (-17) bounces
- - 4h 32' 59'' (-8h 39' 40'') totaltime
+ - 374 (-178) page views
+ - 141 (-37) uniques
+ - 102 (-25) bounces
+ - 5h 10' 42'' (-7h 11' 15'') totaltime
 
 
 top 10 urls:
- - 110x [/]
- - 84x [/blog/2022-12-09/]
+ - 105x [/]
+ - 91x [/blog/2022-12-09/]
  - 61x [/blog/2023-01-12/]
- - 33x [/blog/2022-12-22/]
- - 13x [/about/]
- - 12x [/blog/2022-05-07/]
- - 10x [/wiki/]
- - 10x [/blog/2023-02-03/]
- - 5x [/about/movies/]
- - 4x [/blog/2023-02-01/]
+ - 36x [/blog/2022-12-22/]
+ - 14x [/blog/2022-05-07/]
+ - 11x [/about/]
+ - 11x [/blog/2023-02-03/]
+ - 7x [/wiki/]
+ - 4x [/about/movies/]
+ - 3x [/friends/]
 
 
